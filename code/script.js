@@ -178,18 +178,23 @@ let allBooks = {
 
     allBooks.books.forEach(book =>{
         let li = document.createElement('li')
+        li.className = 'card'
         let img = document.createElement('img')
         img.src = `${book.image}`;
         img.alt = `${book.title}`;
+        img.className = 'img'
         let h2 = document.createElement('h2')
         h2.innerText = `${book.title}`
+        h2.className = 'h2'
         let p = document.createElement('p');
-        p.innerText = `Author : `
+        p.innerText = `Author : `;
+        p.className = 'p'
         let span = document.createElement('span')
         span.innerText = book.author
         p.append(span)
         let button = document.createElement('button')
         button.innerText = 'BUY NOW';
+        button.className = 'btn'
 
         li.append(img , h2 , p , button);
 
