@@ -1,0 +1,15 @@
+.buttons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
